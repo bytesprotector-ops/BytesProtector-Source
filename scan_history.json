@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2026-03-10T16:29:38.086071",
+    "type": "files",
+    "files_scanned": 1,
+    "threats_found": 3,
+    "duration_s": 0.03
+  },
+  {
+    "timestamp": "2026-03-10T16:37:21.563816",
+    "type": "files",
+    "files_scanned": 1,
+    "threats_found": 3,
+    "duration_s": 0.01
+  },
+  {
+    "timestamp": "2026-03-10T16:40:37.762152",
+    "type": "files",
+    "files_scanned": 1,
+    "threats_found": 3,
+    "duration_s": 0.02
+  },
+  {
+    "timestamp": "2026-03-10T16:53:54.281001",
+    "type": "files",
+    "files_scanned": 1,
+    "threats_found": 3,
+    "duration_s": 0.03
+  },
+  {
+    "timestamp": "2026-03-10T17:10:08.127635",
+    "type": "files",
+    "files_scanned": 1,
+    "threats_found": 3,
+    "duration_s": 0.03
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "realtimeProtection": true,
+  "autoQuarantine": true,
+  "heuristicEngine": true,
+  "mlClassifier": true,
+  "rustHashVerifier": true,
+  "scanOnStartup": false,
+  "excludePaths": []
+}

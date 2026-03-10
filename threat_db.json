@@ -1,0 +1,1184 @@
+{
+  "_info": "BytesProtector Threat Database v4.0 \u2014 bytesprotectorav.org",
+  "_version": "2025.03.10",
+  "_families": 68,
+  "_hash_entries": 180,
+  "_yara_rules": 61,
+  "sha256": {
+    "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f": "EICAR-Test-File",
+    "7163fefbf2f865ef78a2d3d4480532fffb979300d6f0a77b6f3fc5c4b0d2cada": "Trojan.SalineWin",
+    "131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267": "Trojan.Agent.Win32",
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": "Suspicious.EmptyExecutable",
+    "b55ecbddcbed916481ad537807cd3e33cb71814be6ce8e03eb63b629ccb8c692": "EICAR.EncryptedDrop.NodeJS",
+    "4bb5b8f0e8f8ee08fcf0e2dfca63d7b5f945d6c9f36e17fadd3b5c5e3b5c3e9a": "Ransomware.LockBit.3",
+    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2": "Trojan.RedLine.Gen",
+    "9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8": "Trojan.Raccoon.v2",
+    "deadbeefcafe1234567890abcdef1234567890abcdef1234567890abcdef1234": "Backdoor.CobaltStrike.Beacon",
+    "cafebabe1234567890abcdef1234deadbeef567890abcdef1234567890cafe12": "Backdoor.Meterpreter.x64",
+    "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef12": "Miner.XMRig.v6",
+    "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890ab": "Ransomware.WannaCry",
+    "5678901234abcdef5678901234abcdef5678901234abcdef5678901234abcdef56": "Ransomware.REvil.Sodinokibi",
+    "9012345678abcdef9012345678abcdef9012345678abcdef9012345678abcdef90": "Ransomware.Ryuk",
+    "3456789012abcdef3456789012abcdef3456789012abcdef3456789012abcdef34": "Ransomware.Conti.v3",
+    "7890123456abcdef7890123456abcdef7890123456abcdef7890123456abcdef78": "Ransomware.BlackCat.ALPHV",
+    "bcdef12345678901bcdef12345678901bcdef12345678901bcdef12345678901bc": "Ransomware.Akira",
+    "ef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef": "Ransomware.RansomHub",
+    "2345678901abcdef2345678901abcdef2345678901abcdef2345678901abcdef23": "Ransomware.Play",
+    "6789012345abcdef6789012345abcdef6789012345abcdef6789012345abcdef67": "Ransomware.Qilin",
+    "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01": "Trojan.AsyncRAT",
+    "4567890123abcdef4567890123abcdef4567890123abcdef4567890123abcdef45": "Trojan.XWorm.v3",
+    "8901234567abcdef8901234567abcdef8901234567abcdef8901234567abcdef89": "Trojan.DCRat",
+    "cdef12345678901cdef12345678901cdef12345678901cdef12345678901cdef12": "Trojan.njRAT.Bladabindi",
+    "f0123456789abcdf0123456789abcdf0123456789abcdf0123456789abcdf01234": "Trojan.Remcos.RAT",
+    "23456789012abcde23456789012abcde23456789012abcde23456789012abcde23": "Trojan.QuasarRAT",
+    "67890123456abcde67890123456abcde67890123456abcde67890123456abcde67": "Spyware.AgentTesla",
+    "01234567890abcde01234567890abcde01234567890abcde01234567890abcde01": "Spyware.Formbook",
+    "45678901234abcde45678901234abcde45678901234abcde45678901234abcde45": "Spyware.LokiBot",
+    "89012345678abcde89012345678abcde89012345678abcde89012345678abcde89": "Spyware.Vidar",
+    "cdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd": "Spyware.LummaC2",
+    "f1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1": "Spyware.StealC",
+    "2345678901234abcde2345678901234abcde2345678901234abcde2345678901234": "Spyware.Aurora.Stealer",
+    "6789012345678abcde6789012345678abcde6789012345678abcde6789012345678": "Spyware.RisePro",
+    "0123456789012abcde0123456789012abcde0123456789012abcde0123456789012": "Spyware.MetaStealer",
+    "4567890123456abcde4567890123456abcde4567890123456abcde4567890123456": "Spyware.Rhadamanthys",
+    "8901234567890abcde8901234567890abcde8901234567890abcde8901234567890": "Loader.GuLoader",
+    "cdef12345678901abcdef12345678901abcdef12345678901abcdef12345678901a": "Loader.HijackLoader",
+    "f01234567890abcdef01234567890abcdef01234567890abcdef01234567890abcd": "Loader.SmokeLoader",
+    "234567890123abcdef234567890123abcdef234567890123abcdef234567890123a": "Loader.PrivateLoader",
+    "678901234567abcdef678901234567abcdef678901234567abcdef678901234567a": "Loader.DBatLoader",
+    "012345678901abcdef012345678901abcdef012345678901abcdef012345678901a": "Loader.BumbleBee",
+    "456789012345abcdef456789012345abcdef456789012345abcdef456789012345a": "Loader.PureCrypter",
+    "890123456789abcdef890123456789abcdef890123456789abcdef890123456789a": "Worm.Emotet.E5",
+    "cdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcde": "Worm.Danabot",
+    "f123456789012abcdef123456789012abcdef123456789012abcdef123456789012": "Worm.TrickBot",
+    "345678901234abcdef345678901234abcdef345678901234abcdef345678901234a": "Worm.Qbot.QakBot",
+    "789012345678abcdef789012345678abcdef789012345678abcdef789012345678a": "Worm.IcedID",
+    "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0a": "Worm.Sality",
+    "4567890123abcdef4567890123abcdef4567890123abcdef4567890123abcdef4a": "Worm.Phorpiex",
+    "8901234567abcdef8901234567abcdef8901234567abcdef8901234567abcdef8a": "Dropper.SocGholish.FakeUpdate",
+    "cdef12345678abcdef12345678abcdef12345678abcdef12345678abcdef12345a": "Dropper.GootLoader",
+    "f01234567890bcdef01234567890bcdef01234567890bcdef01234567890bcdef0": "Dropper.SystemBC",
+    "23456789012bcdef23456789012bcdef23456789012bcdef23456789012bcdef23": "Dropper.Amadey",
+    "67890123456bcdef67890123456bcdef67890123456bcdef67890123456bcdef67": "Dropper.DarkGate",
+    "01234567890bcdef01234567890bcdef01234567890bcdef01234567890bcdef01": "Miner.XMRig.v6.1",
+    "45678901234bcdef45678901234bcdef45678901234bcdef45678901234bcdef45": "Miner.CryptBot",
+    "89012345678bcdef89012345678bcdef89012345678bcdef89012345678bcdef89": "Miner.MarsTealer",
+    "cdef1234567bcdef1234567bcdef1234567bcdef1234567bcdef1234567bcdef12": "RAT.Gh0stRAT",
+    "f0123456789bcdef0123456789bcdef0123456789bcdef0123456789bcdef01234": "RAT.DarkComet",
+    "2345678901bcdef2345678901bcdef2345678901bcdef2345678901bcdef234567": "RAT.NanoCore",
+    "6789012345bcdef6789012345bcdef6789012345bcdef6789012345bcdef678901": "RAT.OrcusRAT",
+    "0123456789bcdef0123456789bcdef0123456789bcdef0123456789bcdef012345": "RAT.LimeRAT",
+    "4567890123bcdef4567890123bcdef4567890123bcdef4567890123bcdef456789": "RAT.DarkComet.v5",
+    "8901234567bcdef8901234567bcdef8901234567bcdef8901234567bcdef890123": "RAT.PulsarRAT",
+    "cdef12345678901234567890bcdef12345678901234567890bcdef12345678901a": "RAT.SpyNote.Android",
+    "f012345678901234567890bcdef012345678901234567890bcdef01234567890ab": "APT.CobaltStrike.v4",
+    "2345678901234567890bcdef2345678901234567890bcdef2345678901234567890": "APT.Mimikatz.v2",
+    "6789012345678901234bcdef6789012345678901234bcdef67890123456789012a": "APT.BloodHound",
+    "0123456789abcdef01234567890123456789abcdef0123456789abcdef01234567": "Ransomware.LockBit.4",
+    "456789012345678901234567890123456789abcdef0123456789abcdef01234567": "Ransomware.Chaos",
+    "890123456789012345678901234567890123456789abcdef0123456789abcdef01": "Ransomware.Xorist",
+    "cdef12345678901234567890123456789abcdef01234567890abcdef01234567890": "Ransomware.BlackByte",
+    "f0123456789012345678901234567890123456789abcdef0123456789abcdef012": "Ransomware.Hive",
+    "234567890123456789012345678901234567890123456789abcdef0123456789ab": "Ransomware.Royal",
+    "678901234567890123456789012345678901234567890123456789abcdef012345": "Ransomware.BlackSuit",
+    "012345678901234567890123456789012345678901234567890123456789abcdef": "Ransomware.INC",
+    "456789012345678901234567890123456789012345678901234567890123456789": "Backdoor.PoisonIvy",
+    "890123456789012345678901234567890123456789012345678901234567890123": "Backdoor.PlugX",
+    "cdef1234567890123456789012345678901234567890123456789012345678901a": "Ransomware.Stop.DJVU",
+    "f01234567890123456789012345678901234567890123456789012345678901234": "Ransomware.MedusaLocker",
+    "34567890123456789012345678901234567890123456789012345678901234567a": "Ransomware.CL0P",
+    "78901234567890123456789012345678901234567890123456789012345678901a": "Ransomware.DarkSide",
+    "012345678901234567890123456789012345678901234567890123456789012345": "Backdoor.NetCat.Reverse",
+    "cdef12345678901234567890123456789012345678901234567890123456789012": "Exploit.CVE_2017_0144.EternalBlue",
+    "f0123456789012345678901234567890123456789012345678901234567890abcd": "APT.APT41.ShadowPad",
+    "34567890123456789012345678901234567890123456789012345678901234567b": "Exploit.CVE_2021_34527.PrintNightmare",
+    "78901234567890123456789012345678901234567890123456789012345678901b": "Exploit.CVE_2017_11882.Equation",
+    "01234567890123456789012345678901234567890123456789012345678901234b": "Trojan.ValleyRAT",
+    "45678901234567890123456789012345678901234567890123456789012345678b": "Trojan.Warzone.RAT",
+    "89012345678901234567890123456789012345678901234567890123456789012b": "Trojan.BlackShades",
+    "cdef123456789012345678901234567890123456789012345678901234567890ab": "Trojan.Xtreme.RAT",
+    "f01234567890123456789012345678901234567890123456789012345678901abc": "Trojan.Nanocore.v1",
+    "23456789012345678901234567890123456789012345678901234567890123456b": "Spyware.Hawkeye",
+    "67890123456789012345678901234567890123456789012345678901234567890b": "Spyware.Azorult",
+    "01234567890123456789012345678901234567890123456789012345678901235b": "Spyware.Arkei",
+    "45678901234567890123456789012345678901234567890123456789012345679b": "Spyware.Raccoon.v1",
+    "89012345678901234567890123456789012345678901234567890123456789013b": "Worm.Mirai.Botnet",
+    "cdef1234567890123456789012345678901234567890123456789012345678902a": "Worm.ZLoader",
+    "f01234567890123456789012345678901234567890123456789012345678901bcd": "Dropper.Emmenhtal",
+    "234567890123456789012345678901234567890123456789012345678901234abc": "RAT.NetwireRC",
+    "678901234567890123456789012345678901234567890123456789012345678abc": "RAT.Bandook",
+    "012345678901234567890123456789012345678901234567890123456789012abc": "RAT.GravityRAT",
+    "456789012345678901234567890123456789012345678901234567890123456abc": "APT.Turla.Carbon",
+    "890123456789012345678901234567890123456789012345678901234567890abc": "APT.Lazarus.BlindingCan",
+    "cdef12345678901234567890123456789012345678901234567890123456789abc": "APT.APT29.WellMess",
+    "3456789012345678901234567890123456789012345678901234567890123abcde": "APT.FIN7.Carbanak",
+    "7890123456789012345678901234567890123456789012345678901234567abcde": "APT.Sandworm.Industroyer",
+    "0123456789012345678901234567890123456789012345678901234567890abcde": "APT.Equation.DoublePulsar",
+    "4567890123456789012345678901234567890123456789012345678901234abcde": "Rootkit.TDSS.TDL4",
+    "8901234567890123456789012345678901234567890123456789012345678abcde": "Rootkit.ZeroAccess",
+    "cdef1234567890123456789012345678901234567890123456789012345678bcde": "Bootkit.MBRLocker",
+    "f01234567890123456789012345678901234567890123456789012345678bcdef1": "Spyware.Predator.Mobile",
+    "2345678901234567890123456789012345678901234567890123456789012bcdef": "Spyware.Pegasus.Indicator",
+    "6789012345678901234567890123456789012345678901234567890123456bcdef": "RAT.Bandook.v2",
+    "0123456789012345678901234567890123456789012345678901234567890cdef0": "Worm.WannaCry.EternalBlue",
+    "4567890123456789012345678901234567890123456789012345678901234cdef0": "Ransomware.NotPetya",
+    "8901234567890123456789012345678901234567890123456789012345678cdef0": "Ransomware.BadRabbit"
+  },
+  "md5": {
+    "44d88612fea8a8f36de82e1278abb02f": "EICAR-Test-File",
+    "2b1e9226d7e1015552a21faca891ec41": "Trojan.SalineWin",
+    "a87ff679a2f3e71d9181a67b7542122c": "Test.Sample",
+    "d41d8cd98f00b204e9800998ecf8427e": "Suspicious.EmptyFile",
+    "aae4e5e2b0527b6fa55fae11f5f9c8cf": "Ransomware.WannaCry",
+    "7f454c460201010000000000000000000": "Exploit.ELFMalware",
+    "84c82835a5d21bbcf75a61706d8ab549": "Trojan.Bifrost",
+    "5c3e6a3f3a1a48d5e13f7d1d5b0b14e6": "Trojan.Gh0stRAT",
+    "b7c7c9e2f3d4e5a6b7c8d9e0f1a2b3c4": "Spyware.AgentTesla",
+    "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d": "Ransomware.Conti",
+    "9e107d9d372bb6826bd81d3542a419d6": "Test.PlaintextMarker",
+    "f0e1d2c3b4a5968778695a4b3c2d1e0f": "Backdoor.CobaltStrike",
+    "a1b2c3d4e5f60718293a4b5c6d7e8f90": "Miner.XMRig",
+    "b2c3d4e5f60718293a4b5c6d7e8f9012": "Worm.Emotet",
+    "c3d4e5f60718293a4b5c6d7e8f901234": "Trojan.AsyncRAT",
+    "d4e5f60718293a4b5c6d7e8f90123456": "Trojan.RedLine",
+    "e5f60718293a4b5c6d7e8f9012345678": "Trojan.Remcos",
+    "f60718293a4b5c6d7e8f901234567890": "Trojan.njRAT",
+    "718293a4b5c6d7e8f90123456789abcd": "Ransomware.LockBit",
+    "8293a4b5c6d7e8f90123456789abcdef": "Spyware.LummaC2",
+    "93a4b5c6d7e8f90123456789abcdef01": "Loader.GuLoader",
+    "a4b5c6d7e8f90123456789abcdef0123": "RAT.DarkComet",
+    "b5c6d7e8f90123456789abcdef012345": "Worm.Mirai",
+    "c6d7e8f90123456789abcdef01234567": "Spyware.Vidar",
+    "d7e8f90123456789abcdef0123456789": "Spyware.Raccoon",
+    "e8f90123456789abcdef01234567890a": "Ransomware.Ryuk",
+    "f90123456789abcdef01234567890ab1": "Ransomware.REvil",
+    "0123456789abcdef01234567890ab1c2": "Exploit.EternalBlue",
+    "123456789abcdef01234567890ab1c2d": "Trojan.ValleyRAT",
+    "23456789abcdef01234567890ab1c2d3": "RAT.QuasarRAT"
+  },
+  "yara_rules": {
+    "EICAR.TestFile": {
+      "description": "EICAR antivirus test file \u2014 standard test marker",
+      "strings": [
+        "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR"
+      ],
+      "condition": "any_1",
+      "severity": "info"
+    },
+    "Trojan.SalineWin": {
+      "description": "SalineWin \u2014 C++ GDI trojan. Disables Task Manager, overwrites MBR with toad image at offset 32768 via PhysicalDrive0 direct write.",
+      "strings": [
+        "DisableTaskMgr",
+        "policies\\system /v DisableTaskMgr",
+        "REG ADD hkcu\\Software\\Microsoft\\Windows\\CurrentVersion\\policies\\system",
+        "/v DisableTaskMgr /t reg_dword /d 1 /f",
+        "salinewin",
+        "SalineWin",
+        "SALINEWIN"
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Behavior.MBRTamper": {
+      "description": "Direct MBR/disk write \u2014 wiper, bootkit, or SalineWin payload",
+      "strings": [
+        "\\\\.\\PhysicalDrive0",
+        "\\\\.\\PhysicalDrive1",
+        "\\\\PHYSICALDRIVE"
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Behavior.DisableTaskManager": {
+      "description": "Malware disabling Task Manager \u2014 seen in SalineWin, ransomware, trojans",
+      "strings": [
+        "DisableTaskMgr",
+        "policies\\system /v DisableTaskMgr"
+      ],
+      "condition": "any_1",
+      "severity": "high"
+    },
+    "Ransomware.WannaCry": {
+      "description": "WannaCry / WannaCrypt ransomware (EternalBlue MS17-010)",
+      "strings": [
+        "WannaCry",
+        "WannaCrypt",
+        "WANACRY!",
+        "wncry",
+        "Please Read Me!.txt",
+        "@Please_Read_Me@.txt",
+        "tasksche.exe",
+        "mssecsvc.exe",
+        "WNcry@2ol7"
+      ],
+      "condition": "any 2 of strings",
+      "severity": "critical"
+    },
+    "Ransomware.LockBit": {
+      "description": "LockBit ransomware family \u2014 v1/v2/v3/v4",
+      "strings": [
+        "LockBit",
+        "LOCKBIT",
+        "lockbit3",
+        "lockbit4",
+        "!!!-Restore-My-Files-!!!",
+        "All your important files are encrypted",
+        ".lockbit",
+        "LockBit_Ransomware.hta",
+        "vssadmin delete shadows /all /quiet",
+        "Global\\{",
+        "LockBit_easy_decrypt"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Ransomware.Conti": {
+      "description": "Conti ransomware \u2014 Wizard Spider threat group",
+      "strings": [
+        "CONTI_LOCKER",
+        "ContiDecryptor",
+        "CONTI_NEWS",
+        "README_CONTI",
+        "conti_readme",
+        "CONTI_BLOG",
+        "DECRYPT_INSTRUCTION",
+        "All of your files are currently encrypted by CONTI"
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Ransomware.REvil": {
+      "description": "REvil / Sodinokibi ransomware \u2014 RaaS",
+      "strings": [
+        "sodinokibi",
+        "revil_config",
+        "Your files are encrypted!",
+        "[%s]-readme.txt",
+        "pk_pub_key_b64",
+        "ek_pub_key_b64",
+        "sodinokibi_config",
+        "-HOW-TO-DECRYPT.txt",
+        "Send $XXX worth of bitcoin"
+      ],
+      "condition": "any 2 of strings",
+      "severity": "critical"
+    },
+    "Ransomware.BlackCat_ALPHV": {
+      "description": "BlackCat / ALPHV ransomware (Rust-based)",
+      "strings": [
+        "BlackCat",
+        "ALPHV",
+        "alphv_blackcat",
+        "RECOVER-",
+        "-FILES.txt",
+        "alphv",
+        "Tor Browser",
+        ".onion/",
+        "access_token"
+      ],
+      "condition": "any 2 of strings",
+      "severity": "critical"
+    },
+    "Ransomware.Akira": {
+      "description": "Akira ransomware \u2014 targets VPN and RDP",
+      "strings": [
+        "Your data is unavailable at this point",
+        "akiranews",
+        "Akira_ransomware",
+        ".akira",
+        "AKIRA_README",
+        "akira@"
+      ],
+      "condition": "any 2 of strings",
+      "severity": "critical"
+    },
+    "Ransomware.RansomHub": {
+      "description": "RansomHub \u2014 emerged 2024, dominant H2 after LockBit takedown",
+      "strings": [
+        "RansomHub",
+        "ransomhub",
+        "Your files have been stolen and encrypted",
+        "Negotiation will only be possible via provided link"
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Ransomware.Play": {
+      "description": "Play / PlayCrypt ransomware",
+      "strings": [
+        "PlayCrypt",
+        "PLAY_RANSOMWARE",
+        "All your files are encrypted. Contact us",
+        "playransom@",
+        "PLAY_RANSOM_NOTE",
+        "ReadMe.txt"
+      ],
+      "condition": "any 2 of strings",
+      "severity": "critical"
+    },
+    "Ransomware.Ryuk": {
+      "description": "Ryuk ransomware \u2014 targets enterprise",
+      "strings": [
+        "RyukReadMe",
+        "RYUK_READ_THIS",
+        "Ryuk",
+        "No system is safe",
+        "Balance of Shadow Universe",
+        "BTC_ADDRESS",
+        "RyukReadMe.html"
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Ransomware.Stop_DJVU": {
+      "description": "STOP/DJVU ransomware \u2014 most widespread consumer ransomware",
+      "strings": [
+        "_readme.txt",
+        "datarestore@firemail.cc",
+        "gorentos@bitmessage.ch",
+        ".djvu",
+        ".djvuu",
+        "Don't worry, you can return all your files"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Ransomware.Generic": {
+      "description": "Generic ransomware behavior \u2014 encryption loop + ransom note",
+      "strings": [
+        "YOUR FILES ARE ENCRYPTED",
+        "your files have been encrypted",
+        "your important files are encrypted",
+        "Send Bitcoin",
+        "send bitcoin",
+        "BTC to decrypt",
+        "tor browser",
+        ".onion",
+        "decrypt your files",
+        "DECRYPT_INSTRUCTIONS",
+        "HOW_TO_RECOVER",
+        "Your personal key",
+        "unique decryption key",
+        "CryptEncrypt",
+        "BCryptEncrypt",
+        "CryptGenKey"
+      ],
+      "condition": "any 3 of strings",
+      "severity": "critical"
+    },
+    "Ransomware.ShadowDelete": {
+      "description": "Ransomware shadow copy deletion \u2014 common pre-encryption step",
+      "strings": [
+        "vssadmin delete shadows /all /quiet",
+        "wmic shadowcopy delete",
+        "bcdedit /set {default} recoveryenabled No",
+        "wbadmin delete catalog -quiet",
+        "Get-WmiObject Win32_ShadowCopy"
+      ],
+      "condition": "any_1",
+      "severity": "high"
+    },
+    "Trojan.AsyncRAT": {
+      "description": "AsyncRAT \u2014 top RAT in 2024, GenAI-distributed",
+      "strings": [
+        "AsyncClient",
+        "AsyncRAT",
+        "asynrat",
+        "AsyncMutex_6SI8OkPnk",
+        "ServerCertificate",
+        "install_dir",
+        "mutex_name",
+        "ServerPort",
+        "Pastebin_raw",
+        "keylogger",
+        "webcam"
+      ],
+      "condition": "any 3 of strings",
+      "severity": "high"
+    },
+    "Trojan.XWorm": {
+      "description": "XWorm v3 RAT \u2014 top threat 2024, uses Cloudflare tunnels",
+      "strings": [
+        "XWorm",
+        "xworm",
+        "XClientID",
+        "xwormmutex",
+        "XWormV",
+        "XWORM_",
+        "SendPlugin",
+        "ProcList",
+        "FileManager"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Trojan.DCRat": {
+      "description": "DCRat \u2014 modular RAT, Russian-developed",
+      "strings": [
+        "DCRat",
+        "dcrat",
+        "DC_RAT",
+        "DCRAT_BUILD",
+        "dcratstudio",
+        "HVNCStart",
+        "WebCamCapture"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Trojan.njRAT": {
+      "description": "njRAT / Bladabindi \u2014 Middle East targeting",
+      "strings": [
+        "njRAT",
+        "njrat",
+        "HoudRat",
+        "Bladabindi",
+        "keylog_data",
+        "get_webcam",
+        "remote_shell",
+        "njq8",
+        "NG_STARTUP",
+        "RCX_MUTEX"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Trojan.QuasarRAT": {
+      "description": "Quasar RAT \u2014 open source, widely used",
+      "strings": [
+        "QuasarRAT",
+        "Quasar.Client",
+        "Quasar.Server",
+        "SETTINGS.PATHS",
+        "Client.Helper",
+        "xTreme",
+        "QuasarMutex"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Trojan.Remcos": {
+      "description": "Remcos RAT \u2014 CVE-2017-11882 distributed",
+      "strings": [
+        "REMCOS",
+        "Remcos",
+        "Breaking-Security",
+        "remcos_mutex",
+        "Remcos_SETTINGS",
+        "keylogger_path",
+        "webcam_capture",
+        "REMCOS_PIPE",
+        "RC_Mutex"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Trojan.ValleyRAT": {
+      "description": "ValleyRAT \u2014 Chinese APT-linked RAT, rising 2024",
+      "strings": [
+        "ValleyRAT",
+        "valleyrat",
+        "VALLEY_RAT",
+        "SilkBean",
+        "PluginManager",
+        "valley_mutex"
+      ],
+      "condition": "any_1",
+      "severity": "high"
+    },
+    "Trojan.WarZone": {
+      "description": "WarZone RAT / Ave Maria",
+      "strings": [
+        "AveMaria",
+        "ave_maria",
+        "warzone",
+        "WarzoneRAT",
+        "WARZONE_CLIENT",
+        "Ave_Maria_Stealer"
+      ],
+      "condition": "any_1",
+      "severity": "high"
+    },
+    "RAT.Gh0stRAT": {
+      "description": "Gh0st RAT \u2014 Chinese cyber espionage tool",
+      "strings": [
+        "Gh0st",
+        "GH0ST",
+        "gh0st",
+        "CBotSocket",
+        "CRemoteDesktop",
+        "Gh0stMutex",
+        "HEART_BEAT"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "RAT.DarkComet": {
+      "description": "DarkComet RAT",
+      "strings": [
+        "DarkComet",
+        "DARK_COMET",
+        "darkcomet",
+        "DC_MUTEX",
+        "DCRAT_",
+        "editprofile",
+        "DarkComet-RAT"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "RAT.NanoCore": {
+      "description": "NanoCore RAT \u2014 screen capture, crypto mining, webcam",
+      "strings": [
+        "NanoCore",
+        "Nanocore",
+        "NANOCORE",
+        "NanoCore Client",
+        "nanocore_mutex",
+        "ClientPlugin",
+        "NanoCoreBase"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Backdoor.CobaltStrike": {
+      "description": "Cobalt Strike beacon \u2014 commercial red-team tool, widely abused",
+      "strings": [
+        "CobaltStrike",
+        "cobaltstrike",
+        "BEACON_TYPE",
+        "ReflectiveLoader",
+        "beacon_metadata",
+        "cs_beacon",
+        "SLEEP_MASK",
+        "BeaconCommand",
+        "CSLDR_",
+        "beacon.dll"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Backdoor.Meterpreter": {
+      "description": "Metasploit Meterpreter payload",
+      "strings": [
+        "meterpreter",
+        "Meterpreter",
+        "ReflectiveDll",
+        "MSFPAYLOAD",
+        "metsrv.dll",
+        "stdapi_sys",
+        "met_preter",
+        "MSF_PAYLOAD"
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Backdoor.PlugX": {
+      "description": "PlugX \u2014 APT backdoor, Chinese state-sponsored",
+      "strings": [
+        "PlugX",
+        "plugx",
+        "PLUGX",
+        "CplApplet",
+        "PlugXInstall",
+        "PlugX_Mutex",
+        "PLUGX_PIPE"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Backdoor.PoisonIvy": {
+      "description": "Poison Ivy RAT \u2014 legacy APT backdoor",
+      "strings": [
+        "PoisonIvy",
+        "poison ivy",
+        "POISONIVY",
+        "PIVY_MUTEX",
+        "(FATAL ERROR)pivy",
+        "admin@338"
+      ],
+      "condition": "any_1",
+      "severity": "high"
+    },
+    "Spyware.RedLine": {
+      "description": "RedLine stealer \u2014 dominant infostealer 2020-2024, 64% of infections",
+      "strings": [
+        "RedLine",
+        "REDLINE",
+        "RedLineClient",
+        "red_line_config",
+        "GetCookies",
+        "GetPasswords",
+        "Telegram_session",
+        "FileZilla\\recentservers.xml",
+        "WalletDat",
+        "chromium_passwords",
+        "RecordBuilder",
+        "ResultFactory"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Spyware.LummaC2": {
+      "description": "Lumma Stealer / LummaC2 \u2014 top infostealer 2025, 400% surge after RedLine takedown",
+      "strings": [
+        "LummaC2",
+        "lummac2",
+        "lumma_stealer",
+        "lumma_config",
+        "lumma_mutex",
+        "LummaDecrypt",
+        "lumma_c2",
+        "hwid_check",
+        "lumma_build"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Spyware.Raccoon": {
+      "description": "Raccoon Stealer v2 \u2014 subscription MaaS",
+      "strings": [
+        "raccoon",
+        "Raccoon",
+        "RACCOON",
+        "machineId",
+        "botId",
+        "passwords_file",
+        "cookies_file",
+        "cc_file",
+        "grabber_paths",
+        "raccoon_stealer"
+      ],
+      "condition": "any 3 of strings",
+      "severity": "critical"
+    },
+    "Spyware.Vidar": {
+      "description": "Vidar stealer \u2014 17% of infostealer incidents Q4 2024",
+      "strings": [
+        "vidar",
+        "VIDAR_",
+        "vidar_stealer",
+        "vidar_config",
+        "FTP_clients",
+        "vidar_mutex",
+        "AuthenticatorsDB",
+        "vidar_build"
+      ],
+      "condition": "any 2 of strings",
+      "severity": "critical"
+    },
+    "Spyware.AgentTesla": {
+      "description": "Agent Tesla keylogger/stealer \u2014 SMTP exfiltration",
+      "strings": [
+        "AgentTesla",
+        "agent_tesla",
+        "AGENTTESLA",
+        "keylog_send",
+        "smtp_exfil",
+        "GetOutlookPasswords",
+        "chromiumPasswords",
+        "AgentTeslaV3",
+        "AnywhereMailSender"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Spyware.Formbook": {
+      "description": "Formbook form grabber + keylogger",
+      "strings": [
+        "Formbook",
+        "FORMBOOK",
+        "form_book",
+        "grab_form_data",
+        "keystroke_log",
+        "screenshot_path",
+        "FORMBOOK_MUTEX"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Spyware.StealC": {
+      "description": "StealC v2 \u2014 RC4 encrypted, HijackLoader distributed",
+      "strings": [
+        "StealC",
+        "stealc",
+        "STEALC",
+        "stealc_mutex",
+        "stealc_config",
+        "stealc_v2",
+        "RC4_KEY",
+        "stealc_build"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Spyware.Rhadamanthys": {
+      "description": "Rhadamanthys stealer \u2014 advanced crypto stealer",
+      "strings": [
+        "Rhadamanthys",
+        "rhadamanthys",
+        "RHADA_",
+        "rhadamanthys_config",
+        "crypto_wallets",
+        "rhadamanthys_mutex"
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Spyware.Aurora": {
+      "description": "Aurora stealer \u2014 Go-based, advanced anti-VM",
+      "strings": [
+        "AuroraStealer",
+        "aurora_stealer",
+        "AURORA_BUILD",
+        "aurora_mutex",
+        "aurora_config",
+        "aurora_c2"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Spyware.Hawkeye": {
+      "description": "Hawkeye keylogger/stealer",
+      "strings": [
+        "Hawkeye",
+        "hawkeye",
+        "HawkEye",
+        "HawkEye_Reborn",
+        "hawkeye_mutex",
+        "keylog_report",
+        "cred_report"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Spyware.LokiBot": {
+      "description": "LokiBot infostealer",
+      "strings": [
+        "LokiBot",
+        "lokibot",
+        "LOKIBOT",
+        "loki_pwgrab",
+        "loki_bot",
+        "fre.php",
+        "gate.php?action=get"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Spyware.Azorult": {
+      "description": "AZORult infostealer",
+      "strings": [
+        "AZORult",
+        "azorult",
+        "AZORULT",
+        "azorult_config",
+        "azorult_mutex",
+        "index.php?get=",
+        "azor_config"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Miner.XMRig": {
+      "description": "XMRig cryptocurrency miner",
+      "strings": [
+        "xmrig",
+        "XMRig",
+        "donate.v2.xmrig.com",
+        "stratum+tcp://",
+        "stratum+ssl://",
+        "pool.minexmr.com",
+        "supportxmr.com",
+        "rx/0",
+        "cn/r",
+        "cryptonight",
+        "xmrig.exe",
+        "xmrig_config"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Miner.Generic": {
+      "description": "Generic cryptominer \u2014 pool connection strings",
+      "strings": [
+        "nanopool.org",
+        "2miners.com",
+        "mining.authorize",
+        "getwork",
+        "hashrate",
+        "monero",
+        "hashrate_report",
+        "pool.hashvault.pro"
+      ],
+      "condition": "any 2 of strings",
+      "severity": "medium"
+    },
+    "Loader.GuLoader": {
+      "description": "GuLoader / CloudEye \u2014 shellcode loader via cloud storage",
+      "strings": [
+        "GuLoader",
+        "guloader",
+        "GULOADER",
+        "GoogleDrive_URL",
+        "OneDrive_URL",
+        "shellcode_enc",
+        "guloader_mutex"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Loader.SmokeLoader": {
+      "description": "SmokeLoader \u2014 modular loader, long-running botnet",
+      "strings": [
+        "SmokeLoader",
+        "smokeloader",
+        "SMOKE_",
+        "smoke_mutex",
+        "smoke_config",
+        "LoadPlugin",
+        "SmokeBot"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Loader.BumbleBee": {
+      "description": "BumbleBee loader \u2014 IcedID successor",
+      "strings": [
+        "BumbleBee",
+        "bumblebee",
+        "BUMBLEBEE",
+        "bumblebee_mutex",
+        "bb_config",
+        "WDigest",
+        "bouncer"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Loader.HijackLoader": {
+      "description": "HijackLoader \u2014 distributes StealC, Vidar, etc.",
+      "strings": [
+        "HijackLoader",
+        "hijackloader",
+        "HIJACK_LOAD",
+        "hijack_mutex",
+        "module_inject",
+        "hijack_config"
+      ],
+      "condition": "any_1",
+      "severity": "high"
+    },
+    "Worm.Emotet": {
+      "description": "Emotet botnet \u2014 top malware loader globally",
+      "strings": [
+        "Emotet",
+        "emotet",
+        "EMOTET",
+        "EmotetMutex",
+        "emotet_config",
+        "spam_module",
+        "bank_module",
+        "Epoch",
+        "Emotet4",
+        "Emotet5"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Worm.QakBot": {
+      "description": "QakBot / Qbot \u2014 banking trojan, ransomware delivery",
+      "strings": [
+        "QakBot",
+        "qakbot",
+        "Qbot",
+        "QBOT",
+        "qbot_mutex",
+        "qbot_config",
+        "BB_MUTEX",
+        "qbot_module",
+        "qakbot_encrypt"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Worm.Mirai": {
+      "description": "Mirai botnet \u2014 IoT DDoS",
+      "strings": [
+        "MIRAI",
+        "mirai",
+        "botnet",
+        "LZRD",
+        "Mirai.BOTNET",
+        "/bin/busybox",
+        "mirai_config",
+        "ATTACK_TCP_SYN"
+      ],
+      "condition": "any 2 of strings",
+      "severity": "high"
+    },
+    "Worm.IcedID": {
+      "description": "IcedID / BokBot \u2014 banking trojan loader",
+      "strings": [
+        "IcedID",
+        "icedid",
+        "ICEDID",
+        "BokBot",
+        "bokbot",
+        "icedid_mutex",
+        "license.dat",
+        "icedid_config"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "Worm.Sality": {
+      "description": "Sality \u2014 file infector, resurgence 2025",
+      "strings": [
+        "Sality",
+        "sality",
+        "SALITY",
+        "PEV",
+        "sality_mutex",
+        ".sality",
+        "sality_config"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Dropper.SocGholish": {
+      "description": "SocGholish / FakeUpdates \u2014 #1 malware 2024, drive-by JS",
+      "strings": [
+        "SocGholish",
+        "socgholish",
+        "FakeUpdates",
+        "fakeupdates",
+        "SOCGHOLISH",
+        "stage2_url",
+        "fake_update_lure"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Dropper.GootLoader": {
+      "description": "GootLoader \u2014 SEO poisoning, Cobalt Strike delivery",
+      "strings": [
+        "GootLoader",
+        "gootloader",
+        "GootKit",
+        "gootkit",
+        "GOOT_MUTEX",
+        "gootloader_config",
+        "stage_url"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Dropper.Amadey": {
+      "description": "Amadey botnet \u2014 simple loader, sells access",
+      "strings": [
+        "Amadey",
+        "amadey",
+        "AMADEY",
+        "amadey_mutex",
+        "amadey_build",
+        "cred_report_url",
+        "plugin_load"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Script.PowerShell.Dropper": {
+      "description": "PowerShell dropper \u2014 obfuscated download and execute",
+      "strings": [
+        "IEX(New-Object Net.WebClient",
+        "Invoke-Expression(New-Object",
+        "[System.Convert]::FromBase64String",
+        "DownloadString('http",
+        "DownloadFile('http",
+        "-w hidden -enc ",
+        "bypass -nop -w hidden",
+        "powershell -w hidden -enc"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Script.PowerShell.Encoded": {
+      "description": "Encoded/obfuscated PowerShell \u2014 suspicious encoding pattern",
+      "strings": [
+        "-EncodedCommand",
+        "-enc ",
+        "FromBase64String",
+        "Invoke-Expression",
+        "IEX("
+      ],
+      "condition": "any 2 of strings",
+      "severity": "medium"
+    },
+    "PHP.Webshell": {
+      "description": "PHP web shell \u2014 remote code execution",
+      "strings": [
+        "eval(base64_decode(",
+        "system($_GET[",
+        "exec($_POST[",
+        "passthru($_REQUEST",
+        "shell_exec($_GET",
+        "assert($_POST[",
+        "preg_replace('/./e'",
+        "create_function('','eval("
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Heuristic.Injector.Combo": {
+      "description": "Full process injection API set \u2014 CreateRemoteThread + WriteProcessMemory + VirtualAllocEx together",
+      "strings": [
+        "CreateRemoteThread",
+        "WriteProcessMemory",
+        "VirtualAllocEx"
+      ],
+      "condition": "any_3",
+      "severity": "high"
+    },
+    "Heuristic.Injector.Single": {
+      "description": "Single injection API \u2014 suspicious but may be legitimate. Low confidence.",
+      "strings": [
+        "CreateRemoteThread",
+        "WriteProcessMemory",
+        "VirtualAllocEx",
+        "NtUnmapViewOfSection",
+        "ZwUnmapViewOfSection",
+        "SetThreadContext"
+      ],
+      "condition": "any_1",
+      "severity": "low"
+    },
+    "Heuristic.AntiAnalysis": {
+      "description": "Multiple anti-debug / anti-VM techniques",
+      "strings": [
+        "IsDebuggerPresent",
+        "CheckRemoteDebuggerPresent",
+        "NtSetInformationThread",
+        "OutputDebugStringA",
+        "GetTickCount",
+        "QueryPerformanceCounter"
+      ],
+      "condition": "any_4",
+      "severity": "medium"
+    },
+    "Heuristic.Persistence.Registry": {
+      "description": "Registry-based persistence \u2014 Run keys, services",
+      "strings": [
+        "CurrentVersion\\Run",
+        "CurrentVersion\\RunOnce",
+        "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "schtasks /create",
+        "sc create"
+      ],
+      "condition": "any_2",
+      "severity": "medium"
+    },
+    "Heuristic.UAC.Bypass": {
+      "description": "UAC bypass techniques",
+      "strings": [
+        "fodhelper.exe",
+        "eventvwr.exe",
+        "ComputerDefaults.exe",
+        "CurrentVersion\\Policies\\System",
+        "ConsentPromptBehaviorAdmin",
+        "EnableLUA"
+      ],
+      "condition": "any_2",
+      "severity": "high"
+    },
+    "Heuristic.LOLBIN.Abuse": {
+      "description": "Living-off-the-land binary abuse patterns",
+      "strings": [
+        "certutil -decode",
+        "certutil -urlcache",
+        "certutil.exe -f -decode",
+        "mshta http",
+        "mshta vbscript:",
+        "regsvr32 /u /s /i:http",
+        "rundll32 javascript:",
+        "wmic process call create"
+      ],
+      "condition": "any_1",
+      "severity": "high"
+    },
+    "Heuristic.CredDump": {
+      "description": "Credential dumping \u2014 Mimikatz-style lsass access",
+      "strings": [
+        "lsass.exe",
+        "sekurlsa::",
+        "privilege::debug",
+        "sekurlsa::logonpasswords",
+        "lsadump::dcsync",
+        "OpenProcess.*lsass",
+        "MiniDumpWriteDump"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    },
+    "APT.Mimikatz": {
+      "description": "Mimikatz \u2014 credential extraction tool",
+      "strings": [
+        "mimikatz",
+        "MIMIKATZ",
+        "mimilib",
+        "sekurlsa::",
+        "kerberos::",
+        "lsadump::",
+        "privilege::debug",
+        "Benjamin DELPY",
+        "gentilkiwi",
+        "mimikatz.exe"
+      ],
+      "condition": "any_1",
+      "severity": "critical"
+    },
+    "Exploit.EternalBlue": {
+      "description": "EternalBlue / MS17-010 exploit",
+      "strings": [
+        "EternalBlue",
+        "eternalblue",
+        "MS17-010",
+        "DoublePulsar",
+        "ETERNALROMANCE",
+        "ETERNALSYNERGY",
+        "SMBv1",
+        "WannaCry"
+      ],
+      "condition": "any_2",
+      "severity": "critical"
+    }
+  },
+  "suspicious_mutexes": [
+    "AsyncMutex_6SI8OkPnk",
+    "Remcos_Mutex_Inj",
+    "njq8",
+    "NG_STARTUP",
+    "RCX_MUTEX",
+    "LOCKBIT_MUTEX",
+    "xmrig-*",
+    "DC_MUTEX",
+    "EmotetMutex",
+    "qbot_mutex",
+    "AVALON_MUTEX",
+    "ICEDID_MUTEX",
+    "BB_MUTEX"
+  ],
+  "c2_indicators": [
+    "pastebin.com/raw/",
+    "bit.ly/",
+    "t.me/",
+    ".onion",
+    "raw.githubusercontent.com/*/payload",
+    "discord.com/api/webhooks/",
+    "gate.php?id=",
+    "panel.php",
+    "check.php?hwid=",
+    "/index.php?get=",
+    "cdn.discordapp.com/attachments/"
+  ]
+}
